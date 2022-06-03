@@ -1,6 +1,10 @@
 import { styled } from '@stitches/react';
 import standIcon from './standIcon.svg';
 
+interface IStandButton {
+  onClick?: () => void;
+}
+
 const Button = styled('button', {
   border: 'none',
   borderRadius: '50px',
@@ -19,11 +23,15 @@ const Button = styled('button', {
   '&:hover': {
     backgroundColor: '#ffd07a',
   },
+
+  '& > img': {
+    width: '30px',
+  },
 });
 
-function StandButton() {
+function StandButton(props: IStandButton) {
   return (
-    <Button>
+    <Button onClick={props.onClick}>
       <img src={standIcon} alt="" />
     </Button>
   );

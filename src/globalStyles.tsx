@@ -1,9 +1,15 @@
-import { globalCss } from '@stitches/react';
+import { globalCss, keyframes } from '@stitches/react';
+
+const moveFromRight = keyframes({
+  '0%': { marginLeft: '40px', opacity: '0' },
+  '100%': { marginLeft: '0', opacity: '1' },
+});
 
 const globalStyles = globalCss({
   '*': { margin: 0, padding: 0 },
 
   body: {
+    position: 'relative',
     backgroundColor: '#ff6395',
     display: 'flex',
     alignItems: 'center',
@@ -24,6 +30,11 @@ const globalStyles = globalCss({
     display: 'flex',
     width: '100%',
     justifyContent: 'space-between',
+    animation: `${moveFromRight} 200ms forwards`,
+  },
+
+  '.flex + .flex': {
+    marginTop: '30px',
   },
 
   '.flex + .deck': {
@@ -32,27 +43,58 @@ const globalStyles = globalCss({
 
   '.deck': {
     marginBottom: '20px',
-    marginLeft: '10px',
+
+    display: 'flex',
+  },
+
+  h1: {
+    fontFamily: 'Carter One',
+    fontWeight: '600',
+    marginTop: '5px',
+    marginLeft: '20px',
   },
 
   '.balloon': {
     position: 'relative',
-    width: '150px',
-    height: '110px',
+    width: '130px',
+    height: '80px',
 
-    backgroundColor: '#FFFEF8',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
 
-    borderRadius: '23px',
+    backgroundColor: '#FFEA7A',
+
+    borderRadius: '15px',
+
+    fontFamily: 'Carter One',
+    fontSize: '1.3em',
+    lineHeight: '1em',
+    textAlign: 'center',
+
+    transition: 'background-color 200ms ease-in-out',
+
+    cursor: 'pointer',
+
+    '&:hover': {
+      backgroundColor: '#ffd07a',
+      '&:before': {
+        borderColor: 'transparent #ffd07a transparent ',
+      },
+    },
   },
 
   '.balloon:before': {
     content: '""',
     borderStyle: 'solid',
     borderWidth: '10px 15px 10px 0',
-    borderColor: 'transparent #FFFEF8 transparent transparent',
+    borderColor: 'transparent #FFEA7A transparent ',
+
+    transition: 'border-color 200ms ease-in-out',
+
     position: 'absolute',
-    left: '-14px',
-    top: '40px',
+    left: '-10px',
+    top: '35px',
   },
 });
 

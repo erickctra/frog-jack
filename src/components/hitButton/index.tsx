@@ -1,5 +1,9 @@
 import { styled } from '@stitches/react';
 
+interface IHitButton {
+  onClick?: () => void;
+}
+
 const Button = styled('button', {
   border: 'none',
   borderRadius: '23px',
@@ -21,8 +25,8 @@ const Button = styled('button', {
   },
 });
 
-function HitButton() {
-  return <Button>Hit</Button>;
+function HitButton(props: IHitButton) {
+  return <Button onClick={props.onClick}>Hit</Button>;
 }
 
 export default HitButton;

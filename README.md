@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="#">
     <img src="./public/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -10,7 +10,7 @@
     Made using ReactJS and Stitches!
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://cuteblackjack.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/erickctra/blackjack/issues">Report Bug</a>
     ·

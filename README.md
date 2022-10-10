@@ -8,11 +8,11 @@
     Made using ReactJS and Tailwind!
     <br />
     <br />
-    <a href="https://cuteblackjack.netlify.app/">View Demo</a>
+    <a href="https://frogjack.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/erickctra/blackjack/issues">Report Bug</a>
+    <a href="https://github.com/erickctra/frog-jack/issues">Report Bug</a>
     ·
-    <a href="https://github.com/erickctra/blackjack/issues">Request Feature</a>
+    <a href="https://github.com/erickctra/frog-jack/issues">Request Feature</a>
   </p>
 </div>
 

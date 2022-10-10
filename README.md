@@ -18,7 +18,7 @@
 
 ## About The Project
 
-![alt text](https://raw.githubusercontent.com/erickctra/blackjack/main/public/assets/screenshot.png)
+![alt text](https://raw.githubusercontent.com/erickctra/frog-jack/master/src/assets/screenshot.png)
 
 ### Built With
 
@@ -46,7 +46,7 @@ Follow the instructions to clone this project
 
 2. Clone the repo
    ```sh
-   git clone https://github.com/erickctra/blackjack.git
+   git clone https://github.com/erickctra/frog-jack.git
    ```
 3. Install NPM packages
    ```sh

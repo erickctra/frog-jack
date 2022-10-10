@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "monogram";
+  src: url("../assets/fonts/monogram.ttf");
+}
+
+body {
+  @apply bg-bg font-monogram  flex justify-center m-0 p-0
+}
+
+#dealerHand div:nth-child(5) {
+  @apply left-10
+}
+
+#dealerHand div:nth-child(6) {
+  @apply left-28
+}
+
+#dealerHand div:nth-child(7) {
+  @apply left-44
+}
+
+#dealerHand div:nth-child(8) {
+  @apply left-60
+}
+
+#playerHand div:nth-child(5), {
+  @apply left-10
+}
+
+#playerHand div:nth-child(6) {
+  @apply left-36
+}
+
+#playerHand div:nth-child(7) {
+  @apply left-64
+}
+
+/* 
+
+#playerHand div:nth-child(3) {
+  @apply z-10 -ml-6 -rotate-3
+}
+
+#playerHand div:nth-child(4) {
+  @apply z-20 -ml-6 rotate-3
+}
+
+#playerHand div:last-child {
+  @apply z-50 mt-4 rotate-12 -ml-6
+} */

@@ -170,10 +170,10 @@ function Game() {
   return (
     <div className="w-96 max-w-sm h-screen flex items-center flex-col">
 
-      <a className="text-2xl text-secondary antialiased underline text-center mt-6" href="">https://github.com/erickctra</a>
+      <a className="text-2xl text-secondary antialiased underline text-center mt-6" target={"_blank"} href="https://github.com/erickctra">https://github.com/erickctra</a>
 
       {/* dealer hand */}
-      <div id="dealerHand" className="flex justify-center mt-20 relative scale-[0.8] flex-wrap w-[300px]">
+      <div id="dealerHand" className="flex justify-center mt-14 relative scale-[0.8] flex-wrap w-[300px]">
         <h1 className={`text-3xl text-primary absolute -top-8 -right-10 ${winner == 'you' ? 'line-through' : ''} `}>{!canPlay ? dealerSum : hiddenScore.pop()?.value}</h1>
 
         {dealerDeck.map((card, index) => {
@@ -191,7 +191,7 @@ function Game() {
       <div className="bg-[url('/src/assets/cards/dealerShadow.png')] bg-inherit bg-no-repeat w-40 h-4 mt-10"></div>
 
       {/* your hand */}
-      <div id="playerHand" className="flex justify-center mt-20 relative scale-[0.7] flex-wrap w-[350px]">
+      <div id="playerHand" className="flex justify-center mt-14 relative scale-[0.7] flex-wrap w-[350px]">
         <h1 className={`text-3xl text-primary absolute -top-8 -right-10 ${winner == 'dealer' ? 'line-through' : ''}`}>{yourSum}</h1>
 
         {yourDeck.map((card, index) => {
@@ -227,8 +227,8 @@ function Game() {
           }} className="text-2xl w-64 h-14 rounded-md bg-primary text-bg">Play again</button> <br /></div>
         ) : (
           <div >
-            <button onClick={hit} className={`text-3xl w-48 h-14 rounded-md ${canPlay && yourSum < 21 ? 'bg-primary text-bg' : 'bg-shadow text-secondary'} transition-colors`}>hit</button>
-            <button onClick={stay} className={`text-3xl w-14 h-14 ${canPlay && yourSum <= 21 ? 'bg-b-secondary text-bg' : 'bg-shadow text-secondary'} transition-colors rounded-md ml-4`}>.</button>
+            <button onClick={hit} className={`text-3xl w-44 h-14 rounded-md ${canPlay && yourSum < 21 ? 'bg-primary text-bg' : 'bg-shadow text-secondary'} transition-colors`}>hit</button>
+            <button onClick={stay} className={`text-3xl w-20 h-14 ${canPlay && yourSum <= 21 ? 'bg-b-secondary text-bg' : 'bg-shadow text-secondary'} transition-colors rounded-md ml-4`}>stay</button>
           </div>
         )}
         <Link className="text-2xl text-secondary underline mt-8" to={"/help"}>how to play</Link>

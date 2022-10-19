@@ -5,7 +5,7 @@ import help2 from "../assets/help/helpFile2.png"
 
 export function Help() {
   return (
-    <div className="w-96 mt-[40vh] max-w-sm h-auto flex flex-col box-border px-8 py-28">
+    <div className="w-96 mt-[10vh] max-w-sm h-auto flex flex-col box-border px-8 py-28">
       <h1 className="text-3xl text-start text-primary">How to play</h1>
       <p className="text-2xl leading-4 text-slate-500 mt-4">the objective of the game is to get a set of cards in which the sum must be 21.
         Or you can get as close as possible without bursting</p>
